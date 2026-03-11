@@ -43,8 +43,13 @@
         <label><input type="checkbox" name="rel" value="Salary or Employment"> Salary or Employment</label>
         <label><input type="checkbox" name="rel" value="Speakers Bureau or other Promotional Education"> Speakers Bureau or other Promotional Education</label>
         <label><input type="checkbox" name="rel" value="Stock / Shareholder (self-managed)"> Stock / Shareholder (self-managed)</label>
-        <label><input type="checkbox" name="rel" value="Other Financial or Material Support"> Other Financial or Material Support (royalties, patents, etc)</label>
+		<label><input type="checkbox" id="rel-other" name="rel" value="Other Financial or Material Support"> Other Financial or Material Support (royalties, patents, etc)</label>
       </div>
+		
+	<div id="other-detail-container" class="conditional-field" style="display: none;">
+	  <label for="other-detail-input">Please describe the relationship:</label>
+	  <textarea id="other-detail-input" rows="3" placeholder="e.g. Patent owner for X technology..."></textarea>
+	</div>
     </fieldset>
 
     <div class="modal-actions">
