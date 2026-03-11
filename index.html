@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script src="disclosures.js"></script>
+</head>
+
+<body>
+	
+<section class="disclosure-section">
+  <h3>Financial Relationships</h3>
+  <p class="instruction-text">Please disclose any financial relationships with ineligible companies within the last 24 months.</p>
+
+  <ul id="disclosure-summary-list" class="summary-list">
+
+  </ul>
+
+  <button type="button" id="open-modal-btn" class="btn-add-disclosure">
+    + Add a Financial Relationship
+  </button>
+</section>
+
+<div id="disclosure-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+  <div class="modal-content">
+    <h2 id="modal-title">Add Financial Relationship</h2>
+    
+    <div class="form-group">
+      <label for="company-name-input">Ineligible Company Name</label>
+      <input type="text" id="company-name-input" placeholder="Enter company name..." />
+    </div>
+
+    <fieldset class="relationship-fieldset">
+      <legend>Select all relationship types that apply:</legend>
+      
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="rel" value="Advisory Board or Panel"> Advisory Board or Panel</label>
+        <label><input type="checkbox" name="rel" value="Consultant"> Consultant</label>
+        <label><input type="checkbox" name="rel" value="Grants / Research Support"> Grants / Research Support</label>
+        <label><input type="checkbox" name="rel" value="Independent Contractor"> Independent Contractor</label>
+        <label><input type="checkbox" name="rel" value="Ownership Interest"> Ownership Interest</label>
+        <label><input type="checkbox" name="rel" value="Salary or Employment"> Salary or Employment</label>
+        <label><input type="checkbox" name="rel" value="Speakers Bureau or other Promotional Education"> Speakers Bureau or other Promotional Education</label>
+        <label><input type="checkbox" name="rel" value="Stock / Shareholder (self-managed)"> Stock / Shareholder (self-managed)</label>
+        <label><input type="checkbox" name="rel" value="Other Financial or Material Support"> Other Financial or Material Support (royalties, patents, etc)</label>
+      </div>
+    </fieldset>
+
+    <div class="modal-actions">
+      <button type="button" id="close-modal-btn" class="btn-secondary">Cancel</button>
+      <button type="button" id="save-disclosure-btn" class="btn-primary">Save Disclosure</button>
+    </div>
+  </div>
+</div>
+	
+</body>
+</html>
